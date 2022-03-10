@@ -3,11 +3,17 @@ import { useSelector, useDispatch } from 'react-redux';
 import { authActions } from '../Store/index';
 
 const Header = () => {
+    // const dispatch = useDispatch();
+    // const isAuth = useSelector((state) => state.auth.isAuthed)
+
+    // const logoutHandler = () => {
+    //     dispatch(authActions.logout())
+    // }
     const dispatch = useDispatch();
-    const isAuth = useSelector((state) => state.auth.isAuthed)
+    const isAuth = useSelector((state) => state.auth.isAuthed);
 
     const logoutHandler = () => {
-        dispatch(authActions.logout())
+      dispatch(authActions.logout())
     }
 
     return (

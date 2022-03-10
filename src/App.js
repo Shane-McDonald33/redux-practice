@@ -9,8 +9,8 @@ function App() {
 const auth = useSelector((state) => state.auth.isAuthed)
   return (
   <Fragment>
-    <Header/>
-    {!auth && <Auth />}
+    <Header />
+    {!auth && <Auth/>}
     {auth && <UserProfile/>}
     <Counter/>
   </Fragment> 
